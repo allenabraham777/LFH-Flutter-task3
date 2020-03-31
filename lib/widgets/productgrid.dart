@@ -9,7 +9,7 @@ class ProductGrid extends StatefulWidget {
 class _ProductGridState extends State<ProductGrid> {
   var productList = [
     {
-      "name":"Coca Cola",
+      "name":"Coca Cola Softdrink (Bottle)",
       "picture":"images/cocacola.png",
       "old_price":"35",
       "price":"30",
@@ -17,7 +17,7 @@ class _ProductGridState extends State<ProductGrid> {
       "quantity":"600ml"
     },
     {
-      "name":"Pepsi",
+      "name":"Pepsi Softdrink (Bottle)",
       "picture":"images/pepsi.png",
       "old_price":"35",
       "price":"30",
@@ -25,7 +25,7 @@ class _ProductGridState extends State<ProductGrid> {
       "quantity":"600ml"
     },
     {
-      "name":"Avt Dust Tea",
+      "name":"AVT Dust Tea Packet",
       "picture":"images/avttea.png",
       "old_price":"35",
       "price":"30",
@@ -33,7 +33,7 @@ class _ProductGridState extends State<ProductGrid> {
       "quantity":"250g"
     },
     {
-      "name":"Bru Instant Coffee",
+      "name":"Bru Instant Coffee Packet",
       "picture":"images/brucoffee.png",
       "old_price":"35",
       "price":"30",
@@ -41,7 +41,7 @@ class _ProductGridState extends State<ProductGrid> {
       "quantity":"250g"
     },
     {
-      "name":"Nescafe Instant Coffee",
+      "name":"Nescafe Instant Coffee Packet",
       "picture":"images/nescafecoffee.png",
       "old_price":"35",
       "price":"30",
