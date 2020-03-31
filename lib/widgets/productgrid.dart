@@ -45,7 +45,7 @@ class _ProductGridState extends State<ProductGrid> {
       "picture":"images/nescafecoffee.png",
       "old_price":"35",
       "price":"30",
-      "discount":"14%",
+      "discount":"",
       "quantity":"100g"
     },
   ];
@@ -134,7 +134,7 @@ class ProductCard extends StatelessWidget {
                     alignment: Alignment.topLeft,
                     child: Container(
                       padding: EdgeInsets.all(5.0),
-                      decoration: BoxDecoration(color: Colors.green),
+                      decoration: BoxDecoration(color: productDiscount != "" ? Colors.green : Colors.transparent),
                       child: Text(
                         "$productDiscount OFF",
                         style: TextStyle(
@@ -145,18 +145,17 @@ class ProductCard extends StatelessWidget {
                       ),
                     ),
                 ),
-              ),
+              ), 
               Align(
                 alignment: Alignment.topLeft,
                 child: Text(
                   "Rs $productPrice",
                   style: TextStyle(
-                    fontSize: 15.0,
+                    fontSize: 20.0,
                     fontWeight: FontWeight.bold
                   ),
                 ),
               ),
-              SizedBox(height: 5.0),
               Align(
                 alignment: Alignment.topLeft,
                 child: Text(
