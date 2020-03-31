@@ -30,7 +30,23 @@ class _ProductGridState extends State<ProductGrid> {
       "old_price":"35",
       "price":"30",
       "discount":"14%",
-      "quantity":"600ml"
+      "quantity":"250g"
+    },
+    {
+      "name":"Bru Instant Coffee",
+      "picture":"images/brucoffee.png",
+      "old_price":"35",
+      "price":"30",
+      "discount":"14%",
+      "quantity":"250g"
+    },
+    {
+      "name":"Nescafe Instant Coffee",
+      "picture":"images/nescafecoffee.png",
+      "old_price":"35",
+      "price":"30",
+      "discount":"14%",
+      "quantity":"100g"
     },
   ];
 
@@ -104,6 +120,7 @@ class ProductCard extends StatelessWidget {
           ),
           padding: EdgeInsets.all(5.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Container(
                 height: 100.0,
@@ -134,12 +151,12 @@ class ProductCard extends StatelessWidget {
                 child: Text(
                   "Rs $productPrice",
                   style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.bold
                   ),
                 ),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 5.0),
               Align(
                 alignment: Alignment.topLeft,
                 child: Text(
@@ -151,7 +168,7 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 5.0),
               Align(
                 alignment: Alignment.topLeft,
                 child: Text(
@@ -163,7 +180,7 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20.0),
+              SizedBox(height: 15.0),
               Container(
                 padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 decoration: BoxDecoration(
