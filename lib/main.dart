@@ -1,4 +1,4 @@
-import 'package:ecommerce_ui/screens/homescreen.dart';
+import 'package:ecommerce_ui/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(

@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/screens/productDetails.dart';
 import 'package:flutter/material.dart';
 
 class ProductGrid extends StatefulWidget {
@@ -43,8 +44,8 @@ class _ProductGridState extends State<ProductGrid> {
     {
       "name":"Nescafe Instant Coffee Packet",
       "picture":"images/nescafecoffee.png",
-      "old_price":"35",
-      "price":"30",
+      "old_price":"",
+      "price":"35",
       "discount":"",
       "quantity":"100g"
     },
@@ -105,7 +106,14 @@ class ProductCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(10.0),
       child: InkWell(
-        onTap: () {},
+        onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProductDetails(
+          productName: productName,
+          productPicture: productPicture,
+          productOldPrice: productOldPrice,
+          productPrice: productPrice,
+          productDiscount: productDiscount,
+          productQuantity: productQuantity
+        ))),
         child: Container(
           decoration: BoxDecoration(
             color: Colors.white,
@@ -139,8 +147,8 @@ class ProductCard extends StatelessWidget {
                         "$productDiscount OFF",
                         style: TextStyle(
                           fontSize: 12.0,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold
+                          fontWeight: FontWeight.bold,
+                          color: productDiscount != "" ? Colors.white : Colors.transparent
                         ),
                       ),
                     ),
