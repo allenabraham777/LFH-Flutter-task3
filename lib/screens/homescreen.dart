@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/screens/cartScreen.dart';
 import 'package:ecommerce_ui/widgets/categories.dart';
 import 'package:ecommerce_ui/widgets/drawer.dart';
 import 'package:ecommerce_ui/widgets/productgrid.dart';
@@ -19,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         actions: <Widget>[
           IconButton(
-            onPressed: () {},
+            onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => CartScreen())),
             icon: Icon(Icons.shopping_cart),
           )
         ],
